@@ -1,0 +1,42 @@
+1209 echo "Hello Bash!"
+1210 pwd
+1211 mkdir codifyed
+1212 cd codifyed
+1213 mkdir bash-assignment
+1214 touch README.md
+1215 touch meaning-of-life.txt
+1216 mv meaning-of-life.txt history.txt
+1217 code .
+1218 git init
+1219 git status
+1220 git add README.md history.txt
+1221 git status
+1222 git commit -m "Initial commit"
+1223 git checkout -b new-feature
+1224 git branch
+1225 touch feature.txt
+1226 git add feature.txt
+1227 git commit -m "feature"
+1228 git checkout main
+1229 git merge new-feature
+1230 git branch -d new-feature
+1231 git remote add origin https://github.com/117cps/codifyEd.git
+1232 git push -u origin main
+1233 git checkout -b conflict1
+1234 git add feature.txt README.md
+1235 git commit -m "conflict1"
+1236 git push origin conflict1
+1237 git checkout main
+1238 git checkout -b conflict2
+1239 git add feature.txt README.md 
+1240 git commit -m "conflict2"
+1241 git push origin conflict2
+1242 git checkout main
+1243 git pull
+1244 touch .gitignore
+1245 git add .gitignore
+1246 git commit -m "gitignore"
+1247 touch no-commit.txt
+1248 git status
+1249 git push
+1259 history | tail -n 200 >> history.txt
